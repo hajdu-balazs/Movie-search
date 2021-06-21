@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-color: black;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 20px 0px 50px 0px;
+}
+
+.header-h1 {
+  font-family: "Lobster", cursive;
+  font-size: 5.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #dc143c;
+  text-shadow: 2px 0px 2px #dc143c;
+}
+
+.search {
+  width: 280px;
+  padding: 8px;
+  border: none;
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+
+.submit {
+  padding: 8px 20px;
+  border: 1px solid #dc143c;
+  background-color: #dc143c;
   color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.submit:hover {
+  background-color: rgb(180, 22, 54);
+  border: 1px solid rgb(180, 22, 54);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
 }
