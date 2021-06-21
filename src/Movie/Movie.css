@@ -71,24 +71,10 @@
     color: white;
     transform: rotateY(180deg);
     padding: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: start;
     position: relative;
   }
-  
-  /*.movie-overview {
-    visibility: visible;
-    background-color: white;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }*/
   
   .release_date {
     position: absolute;
