@@ -1,114 +1,92 @@
-.movie-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .movie {
-    position: relative;
-    width: 310px;
-    background-color: white;
-    margin: 1.5rem;
-    overflow: hidden;
-    border-radius: 6px;
-    border: 1px solid white;
-    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-  }
-  
-  .movie img {
-    width: 100%;
-    height: 500px;
-  }
-  
-  .movie-title {
-    padding: 5px;
-  }
-  
-  .movie-title h3 {
-    margin: 0;
-  }
-  
-  .movie-overview {
-    overflow: auto;
-    max-height: 100%;
-    padding: 5px;
-  }
-  
-  .flip-box {
-    background-color: transparent;
-    width: 310px;
-    height: 500px;
-    border: 1px solid white;
-    perspective: 1000px;
-  }
-  
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 1.2s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front,
-  .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-box-back {
-    position: relative;
-    background-color: rgb(13, 29, 39);
-    color: white;
-    transform: rotateY(180deg);
-    padding: 15px;
-    font-size: 1.2rem;
-    text-align: start;
-    position: relative;
-  }
-  
-  /*.movie-overview {
-    visibility: visible;
-    background-color: white;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
-    color: black;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }*/
-  
-  .release_date {
-    position: absolute;
-    padding: 5px;
-    bottom: 0;
-    left: 18%;
-    text-align: center;
-    background-color: #dc143c;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .vote_average {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    padding: 10px;
-    background-color: #dc143c;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    border-radius: 50%;
-  }
-  
+:root {
+  --primary-font-color: white;
+  --text-background-color: #dc143c;
+}
+
+.movie {
+  position: relative;
+  width: 320px;
+  background-color: white;
+  margin: 1.5rem;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid white;
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.movie img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.movie-overview {
+  overflow: auto;
+  max-height: 100%;
+  padding: 5px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 320px;
+  height: 500px;
+  border: 1px solid white;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  position: relative;
+  background-color: rgb(13, 29, 39);
+  color: var(--primary-font-color);
+  transform: rotateY(180deg);
+  padding: 15px;
+  font-size: 1rem;
+  text-align: start;
+  position: relative;
+  overflow: auto;
+}
+
+.vote_average {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 15px;
+  background-color: var(--text-background-color);
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+.overview-p {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.release_date {
+  background-color: var(--text-background-color);
+  padding: 5px;
+  border-radius: 4px;
+}
