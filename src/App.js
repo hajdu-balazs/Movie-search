@@ -41,7 +41,6 @@ function App() {
           <input className="submit" type="submit" value="Search" />
         </form>
       </header>
-
       <div className="movie-container">
         {movies.map((movie) => {
           return <Movie key={movie.id} {...movie} />;
