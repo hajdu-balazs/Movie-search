@@ -21,12 +21,6 @@
   object-fit: cover;
 }
 
-.movie-overview {
-  overflow: auto;
-  max-height: 100%;
-  padding: 5px;
-}
-
 .flip-box {
   background-color: transparent;
   width: 320px;
@@ -71,22 +65,25 @@
 
 .vote_average {
   position: absolute;
+  text-align: center;
   top: 8px;
   right: 8px;
-  padding: 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   background-color: var(--text-background-color);
   font-size: 1.4rem;
   font-weight: bolder;
   border-radius: 50%;
+  
 }
 
 .overview-p {
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .release_date {
   background-color: var(--text-background-color);
-  padding: 5px;
+  padding: 5px 8px;
   border-radius: 4px;
 }

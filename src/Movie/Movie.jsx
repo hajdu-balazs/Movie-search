@@ -25,8 +25,8 @@ const Movie = ({
       <div className="flip-box-back">
         <span className="vote_average">{vote_average}</span>
         <h2>Overview:</h2>
-        <p>{overview}</p>
-        <p className="release_date">Release date: {release_date}</p>
+        <p className="overview-p">{overview}</p>
+        <span className="release_date">Release date: {release_date}</span>
       </div>
     </div>
   </div>
