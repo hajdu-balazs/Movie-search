@@ -17,14 +17,14 @@
 
 .movie img {
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
 }
 
 .flip-box {
   background-color: transparent;
   width: 320px;
-  height: 500px;
+  height: 450px;
   border: 1px solid white;
   perspective: 1000px;
 }
@@ -91,10 +91,10 @@
 
 @media (max-width: 500px) {
   .movie {
-    width: 280px;
+    width: 300px;
   }
   .flip-box {
-    width: 280px;
+    width: 300px;
    
   }
 }
